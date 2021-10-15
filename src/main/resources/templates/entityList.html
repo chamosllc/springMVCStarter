@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+<title>SpringMVCアプリ</title>
+</head>
+<body>
+	<section class="section has-background-success-light">
+	<div class="container">
+    <span class="is-size-4">「もの」 一覧</span>
+    <form th:action="@{./}" method="get">
+    <table class="table has-background-success-light">
+    	<thead><tr><th>キー</th><th>値</th></tr></thead>
+    	<tbody>
+    		<tr th:each="entity : ${list}" th:object="${entity}">
+             	<td th:text="*{key}"></td>
+            	<td th:text="*{value}"></td>
+         	</tr>
+         	</tbody>
+    </table>
+    <input type="submit" class="button is-primary is-hovered" value="HOME">
+    </form>
+    </div>
+    </section>
+</body>
+</html>
