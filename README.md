@@ -1,11 +1,13 @@
 # A Practical Guide of Spring Boot 
-Spring BootフレームワークでWebアプリケーションを開発するための実践ガイドである。
+Spring BootフレームワークでJavaプログラミングによるWebアプリケーション開発を実践するガイドである。
 - Spring Framework
--- Spring MVC
---- Spring Boot
+  - Spring MVC
+    - Spring Boot
 
-アプリケーション開発で、あるアプリケーションフレームワークを利用する際、そのフレームワークそのままに従い利用することが肝要である。
-そのフレームワークの構成設計や実現方法を知ることは二義的なことであり、それら知見で、フレームワークの使い方の過誤や理解不足で生じる問題を解決してはならいない。
+アプリ開発で、あるアプリケーションフレームワークを利用する際、そのフレームワークそのままに従い利用することが肝要である。
+そのフレームワークの構成設計や実現方法を知ることは二義的なことである。
+それらの知見で、フレームワークの使い方の過誤や理解不足で生じる問題を解決すると、以降、そのアプリ開発に携わる者にそれら二義的知見を要求することになる。
+本ガイドに続く、開発実習コースではSpring Bootフレームワークの基本的構成で給与システムを実現する。
 
 ## Description
 
@@ -16,8 +18,9 @@ Spring BootフレームワークでWebアプリケーションを開発するた
 
 - JPA(Java Persistence API)
   - O/Rマッピング
-  - リポジトリサーバはMySQLサーバで実装する
-- Tymeleaf
+- [Flyway](https://flywaydb.org/)
+  - リポジトリはMySQLサーバで実装する
+- [Tymeleaf](https://www.thymeleaf.org/index.html)
   - テンプレート・エンジン
 </details>
   
@@ -41,7 +44,7 @@ Spring BootフレームワークでWebアプリケーションを開発するた
   - jsp, htmlファイル
 - データベースへの移行データ フォルダ
   - src/main/resources/db.migration/
-  - 
+  - V?.?.?__xxx.sql
 </details>
 
 
