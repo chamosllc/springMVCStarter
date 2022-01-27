@@ -62,4 +62,6 @@ Spring BootフレームワークでJavaプログラミングによるWebアプ�
 - Lombok
 
 開発環境(Eclipse)
-
+- 実行
+	- プロジェクトメニュー [実行]→[4.Spring Bootアプリケーション]
+	- ブラウザ url[http://localhost:8080/springMVC/]
